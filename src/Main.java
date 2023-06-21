@@ -1,17 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        int x = 300;
-        int y = 1300;
+        int balance = 300;
+        int pay = 1300;
         int percent = 1;
-
         int bonus;
-
-        if(y>=1000) {
-            bonus = y * percent / 100 + x + y;
+        if (pay >= 1000) {
+            bonus = pay * percent / 100 + balance + pay;
         } else {
-            bonus = x + y;
+            bonus = balance + pay;
         }
-
         System.out.println(bonus);
     }
 }
